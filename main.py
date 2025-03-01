@@ -9,7 +9,9 @@ mouse = Mouse(usb_hid.devices)
 
 # Set up pins 13 and 14 for scrolling
 lPedal = digitalio.DigitalInOut(board.IO13)
-rPedal = digitalio.DigitalInOut(board.IO14)
+#lPedal = digitalio.DigitalInOut(board.D13) on some boards
+rPedal = digitalio.DigitalInOut(board.IO4)
+#rPedal = digitalio.DigitalInOut(board.D4)  on some boards
 for i in (lPedal,rPedal):
     i.direction = digitalio.Direction.INPUT
     i.pull = digitalio.Pull.DOWN
