@@ -7,7 +7,7 @@ from adafruit_hid.mouse import Mouse
 # Setup HID mouse
 mouse = Mouse(usb_hid.devices)
 
-# Set up pins 13 and 14 for scrolling
+# Set up pins 13 and 4 for scrolling
 lPedal = digitalio.DigitalInOut(board.IO13)
 #lPedal = digitalio.DigitalInOut(board.D13) on some boards
 rPedal = digitalio.DigitalInOut(board.IO4)
